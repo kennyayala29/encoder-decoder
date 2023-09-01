@@ -1,7 +1,7 @@
 # encoder-decoder
 Create an error correcting system, specifically Hamming(7,4) encoder and decoder in Verilog.
 
-##Background
+## Background
 
 Encoder:
 The encoder generates the parity bits to complete the 7 bit output (codeword). The encoder takes in input data, a bus of 4 bits, and then adds the 3 extra parity bits by using xor gates to create the 7-bit codeword output. There is also a clock and reset 1 bit input. The module has an Asynchronous reset. As seen in the testbench picture below, the encoder does work. It works by getting data and creating extra bits by xoring certain bits of the data. Later the module concatenates the bits and data into an output called codeword.
